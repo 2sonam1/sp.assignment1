@@ -171,6 +171,8 @@ header{
 }
 .insurIn:hover {
     transform: scale(1.05); 
+    color: #E78A00;
+    font-weight: 500;
 }
 .insurIn{
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
