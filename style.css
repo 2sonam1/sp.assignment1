@@ -340,9 +340,7 @@ header{
     font-weight: 400;
 }
 .Motoring-links{
-    /* display: none; */
-    display: flex;
-    flex-wrap: wrap;
+    display: none;
     justify-content: center;
     padding: 20px;
     position: absolute;
@@ -350,8 +348,8 @@ header{
     left: 0;
     background-color: #E7F3EE;
     width: 100%;
-    visibility: hidden;
-    opacity: 0;
+    /* visibility: hidden;
+    opacity: 0; */
     height: auto;
     z-index: 100;
     
@@ -359,6 +357,15 @@ header{
 .Motoring-links a{
     padding: 10px;
     border-radius: 5px;
+}
+.navbar-link-decor{
+    text-decoration: underline;
+    color: #118657;
+}
+.navbar-link-active{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .Motoring-links a:hover{
     background-color: #118657;
@@ -862,6 +869,9 @@ h1{
 @media only screen and (max-width: 410px){
     #swipe{
         width: 340px;
+    }
+    .helpContent img{
+        width: 335px;
     }
 }
 .swiper {

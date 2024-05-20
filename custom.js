@@ -20,14 +20,15 @@ $(document).ready(function () {
         $(".bar").show();
     })
     $(".Motoring").click(function () {
-        if (open == 0) {
-            $(".Motoring-links").css({"opacity":"1","visibility":"visible","height":"auto"})
+        var MotoringLinks = $(".Motoring-links");
+        MotoringLinks.toggle();
+        if (MotoringLinks.css('display') !== 'none') {
+            $(".Motoring-links").css({"display":"flex"});
+            $(".Motoring-links").addClass("navbar-link-active");
             $(".Motoring").css({ "text-decoration": "underline", "color": "rgba(17, 134, 87, 1)" });
-        }
-        else {
-            $(".Motoring-links").css({ "opacity": "0", "visibility": "hidden", "height": "0" })
+        } else {
+            $(".Motoring-links").removeClass("navbar-link-active");
             $(".Motoring").css({ "text-decoration": "none", "color": "rgba(60, 60, 60, 1)" });
         }
-        open = !open
     });
 });
