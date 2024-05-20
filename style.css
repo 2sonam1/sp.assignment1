@@ -32,7 +32,7 @@ header{
     z-index: 100;
     width: 100%;
     background-color: white;
-    /* position: sticky; */
+    position: fixed;
     font-family: "DM Sans";
     margin-bottom: 40px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
@@ -838,7 +838,7 @@ h1{
         flex-direction: column;
     }
     .Motoring-links{
-        height: 0;
+        height: auto;
         padding: 0;
         position: static;
     }
