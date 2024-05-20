@@ -557,11 +557,26 @@ header{
     /* row-gap: 60px; */
     gap: 40px;
 }
+.prodContentIn a{
+    /* color: #118657; */
+    /* border-bottom: #118657;
+    border-width: 1px; */
+    /* background-color: #118657; */
+}
+.prodContentIn a:hover{
+    border-style: solid;
+    color: #118657;
+    border-width: 0 0 2px 0;
+    /* font-weight: 400; */
+    /* border-width: 1px; */
+    /* background-color: #118657; */
+}
 .productsPage ul{
     padding-left: 0px;  
 }
 .productsPage li{
     list-style-type: none;
+    margin-bottom: 10px;
     
 }
 footer{
