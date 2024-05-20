@@ -31,4 +31,16 @@ $(document).ready(function () {
             $(".Motoring").css({ "text-decoration": "none", "color": "rgba(60, 60, 60, 1)" });
         }
     });
+    $(".Home").click(function () {
+        $(".Motoring-links").hide()
+    });
+    $(".Life").click(function () {
+        $(".Motoring-links").hide()
+    });
+    $(".Buisness").click(function () {
+        $(".Motoring-links").hide()
+    });
+    $(".Travel").click(function () {
+        $(".Motoring-links").hide()
+    });
 });
