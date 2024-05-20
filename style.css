@@ -393,7 +393,7 @@ header{
 
 
 
-.helpContentIn{
+/* .helpContentIn{
     transition: ease .2s;  
 }
 .helpContentIn-img{
@@ -402,7 +402,7 @@ header{
 .helpContentIn-img img{
    transition: 0.4s ease-in-out all;
    object-fit: cover;
-} 
+}  */
 
 .space{
     padding-top: 80px;
@@ -486,15 +486,43 @@ header{
 }
 
 .helpContent{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;  
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 40px;  
 }
-
-.helpContent img{
+.helpContentIn-img{
+    height: 0;
+    overflow: hidden;
+    padding-top: 70%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.helpContentIn-img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    transition: 0.4s ease-in-out all;
+}
+.helpContentIn-img img:hover{
+    transform: scale(1.5);
+    
+}
+.helpContentIn{
+    padding: 30px;
+}
+.helpContentIn:hover{
+    box-shadow: 0 2px 5px 0 rgba(0.2, 0.2, 0.2, 0.2);
+    border-radius: 5px;
+    color: #118657;
+    background-color: #1186571A;
+}
+/* .helpContent img{
     width: 540px;
     padding-bottom: 40px;
-}
+} */
 /* .helpContentIn{
     text-align: center;
 } */
@@ -670,9 +698,10 @@ h1{
     display: none;
 }
 @media only screen and (max-width: 1203px) {
-    .helpContent img{
+    /* .helpContent img{
         width: 400px;
-    }
+    } */
+
     .insurance{
         
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -688,9 +717,9 @@ h1{
     }
 }
 @media only screen and (max-width: 1000px) {
-    .helpContent img{
+    /* .helpContent img{
         width: 320px;
-    }
+    } */
     .banner{
         gap: 40px;
     }
@@ -747,9 +776,9 @@ h1{
     
 }
 @media only screen and (max-width: 768px) {
-    .helpContent img{
+    /* .helpContent img{
         width: 250px;
-    }
+    } */
     .banImage2{
         width: 419px;
     height: 357px;
@@ -820,6 +849,12 @@ h1{
     }
     .listings{
     display: none;
+
+}
+.helpContent{
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* gap: 20px;   */
 }
     
     
@@ -829,9 +864,9 @@ h1{
 } */
 @media only screen and (max-width: 550px) {
     
-    .helpContent img{
+    /* .helpContent img{
         width: 390px;
-    }
+    } */
     .banImage2{
         width: 319px;
         height: auto;
@@ -887,9 +922,9 @@ h1{
     #swipe{
         width: 340px;
     }
-    .helpContent img{
+    /* .helpContent img{
         width: 335px;
-    }
+    } */
 }
 .swiper {
   width: 600px;
